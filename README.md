@@ -4,9 +4,9 @@ You're about to compete at sliding down a pyramid and to win you need to take th
 the bottom.
 A pyramid is represented as this:
 
-1
-2 3
-4 5 6
+1  
+2 3  
+4 5 6  
 
 You always start from the top and have to find your way to the bottom. You can only slide to the
 two adjacent fields downwards. Example: 1 -> [2, 3], 2 -> [4, 5], 3 -> [5, 6].
@@ -18,23 +18,22 @@ The input will be provided in the form of a number of telling you how many layer
 after that one layer per row with spaces between the values per layer.
 Example:
 
-4
-1
-2 3
-4 5 6
-7 8 9 10
+4  
+1  
+2 3  
+4 5 6  
+7 8 9 10  
 
 The output from the program of the above pyramid would be: 14 (the sum of the path 1, 2, 4, 7)
 More examples
 A
 Input:
 
-4
-3
-7 4
-
-2 4 6
-8 5 9 3
+4  
+3  
+7 4  
+2 4 6  
+8 5 9 3  
 
 Output:
 
