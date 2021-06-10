@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+Fastest slide
+Description
+You're about to compete at sliding down a pyramid and to win you need to take the fastest path to
+the bottom.
+A pyramid is represented as this:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1
+2 3
+4 5 6
 
-## Available Scripts
+You always start from the top and have to find your way to the bottom. You can only slide to the
+two adjacent fields downwards. Example: 1 -> [2, 3], 2 -> [4, 5], 3 -> [5, 6].
+The number in each field represents how much you'll be slowed down by friction.
+The fastest route is the route that has the lowset sum of all the fields passed through.
+The task
+Write a program that solves the shortest slide path.
+The input will be provided in the form of a number of telling you how many layers there will be and
+after that one layer per row with spaces between the values per layer.
+Example:
 
-In the project directory, you can run:
+4
+1
+2 3
+4 5 6
+7 8 9 10
 
-### `npm start`
+The output from the program of the above pyramid would be: 14 (the sum of the path 1, 2, 4, 7)
+More examples
+A
+Input:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4
+3
+7 4
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2 4 6
+8 5 9 3
 
-### `npm test`
+Output:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+16
 
-### `npm run build`
+B
+Input:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+15
+75
+95 64
+17 47 82
+18 35 87 10
+20 4 82 47 65
+19 1 23 75 3 34
+88 2 77 73 7 63 67
+99 65 4 28 6 16 70 92
+41 41 26 56 83 40 80 70 33
+41 48 72 33 47 32 37 16 94 29
+53 71 44 65 25 43 91 52 97 51 14
+70 11 33 28 77 73 17 78 39 68 17 57
+91 71 52 38 17 14 91 43 58 50 27 29 48
+63 66 4 68 89 53 67 30 73 16 69 87 40 31
+4 62 98 27 23 9 70 98 73 93 38 53 60 4 23
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Output:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+447
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Requirements
+The solution should have no external depdendecies.
