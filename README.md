@@ -1,4 +1,4 @@
-Fastest slide
+Fastest slide  
 Description
 You're about to compete at sliding down a pyramid and to win you need to take the fastest path to
 the bottom.
