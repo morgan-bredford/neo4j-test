@@ -64,4 +64,4 @@ Output:
 447
 
 Requirements
-The solution should have no external depdendecies.
+The solution should have no external depdendecies. 
